@@ -1,0 +1,15 @@
+git clone https://github.com/smartiqaorg/geometric_lib
+cd geometric_lib/
+git checkout -b new_feature
+nano rectangle.py
+git add rectangle.py
+git commit -m "L-03: Added rectangle.py"
+nano triangle.py
+nano rectangle.py
+git add *
+git commit -m "L-03: Added triangle.py and fixed rectangle perimeter bug"
+git log --all --pretty=oneline --graph
+git log --pretty=oneline --graph main..new_feature
+git diff <хэш_предпоследнего_коммита> <хэш_последнего_коммита>
+git checkout main
+git branch -D new_feature
